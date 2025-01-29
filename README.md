@@ -1,7 +1,9 @@
 # quetre-docker-ghcr
 Images of Quetre updated daily hosted on GHCR
 
-This repo fetches the content of QUetre everyday from the official <a href="https://github.com/zyachel/quetre">repo</a> and build+publish on ghcr.io 
+Big thanks to <a href="https://github.com/PussTheCat-org/docker-quetre-quay">PussTheCat</a> for the original image
+
+This repo fetches the content of Quetre everyday from the official <a href="https://github.com/zyachel/quetre">repo</a> and build+publish on ghcr.io 
 Useful if you wanna track the updates with <a href="https://getwud.github.io/wud/#/">WUD</a> for example
 
 Usage:
