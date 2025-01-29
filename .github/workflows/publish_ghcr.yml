@@ -1,0 +1,16 @@
+name: Docker Image CI for GHCR
+
+on:
+    schedule:
+    - cron: "0 1 * * *"
+
+jobs:
+    build_and_publish:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - name: Build and publish the image
+              run: |
+                docker login --username gitgitro --password ${{ secrets.GH_PAT}} ghcr.io
+                docker build . -t ghcr.io/gitgitro/quetre:latest
+                docker push ghcr.io/gitgitro/quetre:latest
